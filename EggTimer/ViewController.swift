@@ -19,7 +19,10 @@ class ViewController: UIViewController {
     
     var timer = Timer()
 
+    @IBOutlet weak var progressBar: UIProgressView!
     @IBAction func hardnessSelected(_ sender: UIButton) {
+        
+        progressBar.progress = 1.0
         
         timer.invalidate()
         
